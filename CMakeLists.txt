@@ -157,7 +157,7 @@ endif ()
 # Define the object library to compile
 #
 set(pelephysics_lib_name PelePhysics-${PELEPHYSICS_CHEMISTRY_MODEL}-${PELEPHYSICS_EOS_MODEL}-${PELEPHYSICS_TRANSPORT_MODEL})
-add_library(${pelephysics_lib_name} OBJECT)
+add_library(${pelephysics_lib_name})
 target_link_libraries(${pelephysics_lib_name} PUBLIC AMReX::amrex)
 target_link_libraries(${pelephysics_lib_name} PUBLIC SUNDIALS::cvode SUNDIALS::arkode)
 
